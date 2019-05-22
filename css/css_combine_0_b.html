@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }        
+
+    #head{
+        background-color: rgb(17, 179, 17);
+        color:white;
+        padding: 10px;
+    }
+
+    body{
+        width:50%;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border : 1px solid black;
+        margin: auto;
+    }
+
+    #left-panel{
+        width:30%;
+        float: left;
+        padding-right: 30px;
+    }
+
+    #right-panel{
+        width:70%;
+        float: right;
+    }
+    
+    .right-panel-text{
+        font-size:110%;
+        line-height: 150%;
+    }
+
+    .clear-both{
+        clear: both;
+    }
+
+    #side-bar{
+        background-color:rgb(16, 162, 230);
+        padding: 10px;
+        margin-top: 20px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        color:white;
+        font-weight:bold;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    #footer{
+        background-color: lightgrey;
+        border:1px solid black;
+        text-align: center;
+        margin: 10px 0;
+        padding:10px;
+    }
+
+    .menu-link{
+        display: inline-block;
+        background-color: gainsboro;
+        width:100%;
+        margin: 3px 0; 
+        padding : 5px;
+        border:1px solid grey;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .menu-link:hover{
+        background-color: white;
+    }
+
+    #menu-link-first{
+        background-color: rgb(17, 179, 17);
+        color:white;
+    }
+
+    #right-panel-head-big{
+        margin : 10px 0;
+    }
+
+    #right-panel-head-small{
+        margin : 10px 0;
+    }
+    </style>
+    
+</head>
+<body>
+    <div id="head">
+        <h1>Welcome to My Homepage</h1>
+        <h3>Use the menu to select different Stylesheets</h3>
+    </div>
+    <div id="left-panel">
+        <ul>
+            <li><a id="menu-link-first" class="menu-link" href="#">Stylesheet 1</a></li>
+            <li><a class="menu-link" href="#">Stylesheet 2</a></li>
+            <li><a class="menu-link" href="#">Stylesheet 3</a></li>
+            <li><a class="menu-link" href="#">Stylesheet 4</a></li>
+            <li><a class="menu-link" href="#">No stylesheet</a></li>
+        </ul>
+    </div>
+    <div id="right-panel">
+        <h1 id="right-panel-head-big">Same Page Different Stylesheets</h1>
+        <p class="right-panel-text">This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
+                <a href="#">Stylesheet 1</a>, 
+                <a href="#">Stylesheet 2</a>, 
+                <a href="#">Stylesheet 3</a>, 
+                <a href="#">Stylesheet 4</a>.</p>
+        <h2 id="right-panel-head-small">No Styles</h2>   
+        <p class="right-panel-text">This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:
+                No Stylesheet.Side-Bar</p>             
+    </div>
+    <div class="clear-both"></div>
+    <div id="side-bar">
+        <h3>Side-Bar</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+    <p id="footer">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+</body>
+</html>
