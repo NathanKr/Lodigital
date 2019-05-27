@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <style>
-        * {
-            margin:0;
-            padding:0;
-        }
-        .container{
-            position: relative;
-        }
-        .full_width{
-            width:100%;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        position: relative;
+      }
+      .full_width {
+        width: 100%;
+      }
 
-        .text_over_img{
-            position: absolute;
-            color:blue;
-            background-color: aqua;
-            font-weight: bold;
-            font-size: 180%;
-            display:inline-block;
-        }
-        .center{
-            /* this should be the accurate solution but it is not working
-            top:calc(50%-height/2);
-            right:calc(50%-width/2); */
-            top:calc(50%);
-            right:calc(50%); 
-        }
-        .top_right{
-            top:50px;
-            right:50px;
-        }
-        .top_left{
-            top:50px;
-            left:50px;
-        }
-        .bottom_right{
-            bottom:50px;
-            right:50px;
-        }
-        .bottom_left{
-            bottom:50px;
-            left:50px;
-        }
+      .text_over_img {
+        position: absolute;
+        color: blue;
+        background-color: aqua;
+        font-weight: bold;
+        font-size: 180%;
+      }
+      .center {
+        top: 50%;
+        left: 50%;
+        /* % in translate refers to the element width and height respectively */
+        transform: translate(-50%, -50%);
+      }
+      .top_right {
+        top: 50px;
+        right: 50px;
+      }
+      .top_left {
+        top: 50px;
+        left: 50px;
+      }
+      .bottom_right {
+        bottom: 50px;
+        right: 50px;
+      }
+      .bottom_left {
+        bottom: 50px;
+        left: 50px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <img  class="full_width" src="https://cdn.pixabay.com/photo/2016/03/09/15/16/wave-1246560__340.jpg" alt="surfer">
-        <span class="top_right text_over_img">top right wave</span>
-        <span class="top_left text_over_img">top left wave</span>
-        <span class="bottom_right text_over_img">bottom right wave</span>
-        <span class="bottom_left text_over_img">bottom left wave</span>
-        <span class="center text_over_img">center wave</span>
+      <img
+        class="full_width"
+        src="https://cdn.pixabay.com/photo/2016/03/09/15/16/wave-1246560__340.jpg"
+        alt="surfer"
+      />
+      <span class="top_right text_over_img">top right wave</span>
+      <span class="top_left text_over_img">top left wave</span>
+      <span class="bottom_right text_over_img">bottom right wave</span>
+      <span class="bottom_left text_over_img">bottom left wave</span>
+      <span class="center text_over_img">center wave</span>
     </div>
-</body>
+  </body>
 </html>
