@@ -1,0 +1,167 @@
+* {
+    padding:0;
+    margin : 0;
+}
+
+body{
+  /* font-family:   ReithSans,Arial,Helvetica,freesans,sans-serif; */
+  font-size: 15px;
+}  
+
+#menu_top:first-child{
+    margin-left:70px;
+}
+
+.bbc_letter{
+    color:white;
+    background-color: black;     
+    padding : 4px;
+    font-weight: 700; 
+    font-size:120%;  
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.menu_top_item{
+    border-left:1px solid black;
+    padding:10px;
+    font-weight: 600;
+    color:black;
+    /* transpent so we will not get height grow on hover */
+    border-bottom: 3px solid transparent;
+    /* use for symetry */
+    border-top: 3px solid transparent;
+}
+
+.menu_top_item_first_or_last{
+    padding-right: 100px;
+}
+
+.menu_top_item > input{
+    background-color: #E4E4E4;
+}
+
+/* this might by confusing but it refer to child 4 which is of class .menu_top_item */
+.menu_top_item:nth-child(4):hover , 
+.menu_top_item:nth-child(5):hover{
+    border-bottom: 4px solid blue;
+} 
+
+.menu_top_item:nth-child(6):hover{
+    border-bottom: 4px solid brown;
+} 
+
+
+.menu_top_item:nth-child(7):hover{
+    border-bottom: 4px solid orange;
+} 
+
+
+.menu_top_item:nth-child(8):hover ,
+.menu_top_item:nth-child(9):hover ,
+.menu_top_item:nth-child(10):hover{
+    border-bottom: 4px solid blue;
+} 
+
+
+.menu_top_item:nth-child(11):hover{
+    border-bottom: 4px solid lightgreen;
+} 
+
+.menu_top_item:nth-child(12):hover , 
+.menu_top_item:nth-child(13):hover{
+    border-bottom: 4px solid black;
+} 
+
+.menu_bottom_item{
+    color:white;
+    margin-right:10px; 
+    padding-bottom:8px;
+    /* transpent so we will not get height grow on hover */
+    border-bottom: 4px solid transparent;
+}
+
+.menu_bottom_item:hover{
+    border-bottom: 4px solid white;
+}
+
+
+#news{
+    background-color: #BB1919;
+    padding-left: 30px;
+    padding-top:7px;
+}
+
+#news_header{
+    color:white;
+    font-size:50px;
+    margin-bottom: 15px;
+}
+
+#tech_header{
+    padding:5px;
+    border-bottom:2px solid #BB1919;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+#tech_section{
+    margin : 5px 30px;
+}
+
+/* select a as child of .grid_item when hover .grid_item */
+.grid_item:hover > a {
+    color:#1380A1;
+    
+}
+
+.grid_item{
+    padding:10px;
+    float : left;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.grid_item > img  , .grid_item > a , .grid_item > div , .grid_item > p{
+    margin-bottom: 8px;
+} 
+
+.grid_item > a{
+    font-size: 120%;
+    color:black;
+    font-weight: 700;
+}
+
+.grid_item > div :first-child{
+    border-right : 1px solid black;
+    padding-right: 5px;
+}
+
+.first_grid_item{
+    width:33.33%;
+}
+
+.second_grid_item{
+    width:20%;
+}
+
+#first_grid_left{
+    width:40%;
+    float: left;
+}
+
+#first_grid_right{
+    width:60%;
+    float: left;
+}
+
+.clear_both{
+    clear:both;
+} 
+
+img {
+    width:100%;
+}
