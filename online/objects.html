@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //document.body
+      //document.getElementById('')
+      var person = {
+        firstName: "John",
+        lastName: "Deer",
+        getFullName: function() {
+          return this.firstName + " " + this.lastName;
+        }
+      };
+
+      console.log(person.getFullName());
+
+      person.firstName = "Nathan";
+      person.lastName = "Krasney";
+      console.log(person.getFullName());
+
+      var rectangle = {
+        width: 10,
+        height: 20,
+        computeArea: function() {
+          return this.width * this.height;
+        }
+      };
+
+      console.log(`area is ${rectangle.computeArea()}`);
+
+      console.log(window);
+
+      console.log(window.person.lastName);
+    </script>
+  </body>
+</html>
