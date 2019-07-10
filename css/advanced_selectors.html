@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #div1{
+            background-color: aqua;
+        }
+        #div2{
+            background-color: lightcoral;
+        }
+        #div3{
+            background-color: aquamarine;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+
+        /* select any anchor child element of div1 while hovering over div1 */
+        #div1:hover > a{
+            color: red;
+        }
+
+        /* select the first child of div2 provided this child is span */
+        #div2 > span:first-child ,
+        /* select the last child of div2 provided this child is p */
+        #div2 > p:last-child
+        {
+            background-color:yellow;
+        }
+        
+
+        /* select the second child of div3 provided it is p */
+        #div3 > p:nth-child(2) ,
+        /* select ANY third child of div3 */
+        #div3 > *:nth-child(3) {
+            background-color: yellow;
+        } 
+
+        span{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+            <p>Hover over this div ---> child element a inside this div1 is selected !!!</p>
+            <a href="#">Link inside div</a>
+    </div>
+        
+    <p>first child element and last child element have selectors </p>
+    <div id="div2">
+            <span>span - first child of div2</span>
+            <p>paragraph</p>
+            <p>paragraph last child of div2</p>
+    </div>
+    
+    <p>child 2 and child 3 element of div3 have selectors</p>
+    <div id="div3">
+        <span>span - child 1 of div3</span>
+        <p>paragraph - child 2 of div3</p>
+        <span>span - child 3 of div3</span>
+        <p>paragraph - child 4 of div3</p>
+    </div>
+    
+    <p>some paragraph</p>
+    <a href="#">Link inside div</a>
+</body>
+</html>
