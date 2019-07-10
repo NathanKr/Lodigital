@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+            //   first sample
+            var person = { name: "Nathan", age: 55 };
+
+            var personJSON = JSON.stringify(person);
+
+            console.log(`json : ${personJSON}`);
+
+            var personFromJSON = JSON.parse(personJSON);
+
+            console.log(personFromJSON);
+
+            //   second sample
+            var obj = {
+              name: "John",
+              age: 30,
+              cars: { car1: "Ford", car2: "BMW", car3: "Fiat" }
+            };
+
+            console.log(JSON.stringify(obj));
+
+            // third sample
+            var personText = '{"name":"nathan" , "male":true , "age":10 , "childrens" : ["Avi" ,"Yossi"] , "key4Obj":{"key1":"val1" , "key2":3}}';
+            var personObj = JSON.parse(personText);
+            console.log(personObj);
+    </script>
+  </body>
+</html>
