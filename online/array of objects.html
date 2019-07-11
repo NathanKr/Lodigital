@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var books = [
+            {name : 'Alice Adventures in Wonderland' , pages : 123} ,
+            {name : 'Animal Farm' , pages : 96} , 
+            {name : 'The Little Prince', pages : 83} ];
+
+        console.log(books);
+
+        var averagePagesNum , sumPages=0;
+        for (var index = 0; index < books.length; index++) {
+            sumPages += books[index].pages;
+        }
+
+        console.log(sumPages/books.length);
+
+        var book1={name : 'Alice Adventures in Wonderland' , pages : 123} ,
+            book2 = {name : 'Animal Farm' , pages : 96} ,
+            book3 = {name : 'The Little Prince', pages : 83};
+
+        books = [book1 , book2 , book3];     
+
+        sumPages = 0;
+         for (var index = 0; index < books.length; index++) {
+            sumPages += books[index].pages;
+        }
+
+        console.log(sumPages/books.length);               
+    </script>
+</body>
+</html>
