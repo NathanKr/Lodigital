@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // synchronouse programming
+        var a,b,sum;
+        a = 1;
+        b = 2;
+        sum=a+b;
+        console.log(sum);
+
+        // a-synchronouse programming sample 1
+        console.log('started 1');
+        setTimeout(function() {
+            console.log('inside timer handler of setTimeout 3000');
+        } , 3000);
+
+        setTimeout(function() {
+            console.log('inside timer handler of setTimeout 0');
+        } , 0);
+
+        console.log('after setTimeout is invoked 1')
+
+    </script>
+</body>
+</html>
