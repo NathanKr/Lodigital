@@ -1,0 +1,121 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+#sum{
+    background-color: blueviolet;
+    padding-bottom: 10px;
+}
+
+body > p:first-child{
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    background-color: blueviolet;
+    padding: 10px 0;
+}
+
+#input{
+    text-align: center;
+    background-color: #F7F7F7;
+    padding:  15px 0;
+}
+
+#income_outcome , #description , #amount{
+    height:40px;
+}
+
+#profit{
+    text-align: center;
+    font-size: 45px;
+    color:white;
+}
+
+.top-grid{
+    width:350px;
+    height:40px; 
+    margin:10px auto;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.top-grid:last-child::after{
+    clear: both;
+}
+
+#top-grid-first{
+    background-color: #28B9B5;
+}
+
+
+#top-grid-second{
+    background-color:#FF5049;
+}
+
+.top-grid > span:first-child{
+    float: left;
+}
+
+.top-grid > span:last-child{
+    float: right;
+}
+
+.list-item{
+    border-top: 1px solid grey;
+    padding:10px;
+    height:30px;
+    width:90%;
+}
+
+.list-item > span:first-child{
+    float:left;
+}
+
+.list-item > span:not(:first-child){
+    float:right;
+}
+
+.list-item::after{
+    clear: both;
+}
+
+.list-item > .amount-item{
+    margin: 0 10px;
+}
+
+ .list-item > .delete-item{
+    opacity: 0;
+    transition: all 1s;
+    cursor: pointer;
+    margin: 0 10px;
+    display: none;
+}
+
+.list-item:hover > .delete-item {
+    opacity: 1;
+    display: inline-block;
+} 
+
+
+#panel_outcome > h3{
+    color: #28B9B5;
+}
+
+#panel_income > h3
+{
+    color:#FF5049;
+}
+
+
+#panel_income , #panel_outcome{
+    float:left;
+    width:50%;
+    padding-left: 5%; 
+    box-sizing: border-box;
+}
+
+
+/* li {
+    margin-left: 200px;
+} */

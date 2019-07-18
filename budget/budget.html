@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="budget.css">
+</head>
+<body>
+    <p>Available Budget in </p>
+    <section id="sum">
+         <p id="profit"></p>
+         <div id='top-grid-first' class='top-grid'>  
+            <span>INCOME</span>  <span id="total_income"></span>
+         </div>
+         <div id='top-grid-second' class='top-grid'>
+            <span>EXPENSES</span><span id="total_outcome"></span>
+         </div>
+    </section>
+    <section id="input">
+        <select id='income_outcome'>
+            <option value="income">+</option>
+            <option value="outcome">-</option>
+        </select>
+        <input id='description' type="text" placeholder="Add description">
+        <input id='amount' type="number" placeholder="Value">
+        <button onclick="add()">Add</button>
+    </section>
+    <section id="panels">
+        <div id='panel_income'>
+            <h3>INCOME</h3>
+            <div id='list_income'>
+            </div>
+        </div>
+        <div id='panel_outcome'>
+            <h3>EXPENSES</h3>
+            <div id='list_outcome'>
+            </div>
+        </div>
+    </section>
+
+    <script src="budget.js"></script>
+</body>
+</html>
