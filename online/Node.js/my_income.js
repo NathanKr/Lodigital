@@ -5,15 +5,9 @@ const file = "my_income.txt";
 let income, desc, amount;
 
 function getIncomesFromFile() {
-  let incomes;
-  try {
-    let data = fs.readFileSync(file);
-    incomes = JSON.parse(data);
-  } catch (error) {
-    incomes = [];
-  }
+  let data = fs.readFileSync(file);
 
-  return incomes;
+  return JSON.parse(data);
 }
 
 function saveIncomes() {
