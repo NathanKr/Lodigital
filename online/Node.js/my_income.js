@@ -5,9 +5,15 @@ const file = "my_income.txt";
 let income, desc, amount;
 
 function getIncomesFromFile() {
-  let data = fs.readFileSync(file);
+  let incomes;
+  try {
+    let data = fs.readFileSync(file);
+    incomes = JSON.parse(data);
+  } catch (error) {
+    incomes = [];
+  }
 
-  return JSON.parse(data);
+  return incomes;
 }
 
 function saveIncomes() {
@@ -56,12 +62,11 @@ if (mode == "add") {
     if (results.length == 0) {
       console.log("income was not removed");
     } else {
-        saveIncomes();
+      saveIncomes();
     }
   } else {
     console.log(`description ${desc} was not found`);
   }
-}
-else{
-    console.log(`mode : ${mode} not supported`);
+} else {
+  console.log(`mode : ${mode} not supported`);
 }
