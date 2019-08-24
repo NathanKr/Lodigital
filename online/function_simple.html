@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+    
+    // -- function definition
+    function writeHello(){
+        console.log('hello');
+    }
+
+    // --- call function
+    writeHello();
+
+    // --- call function
+    writeHello();
+
+    let a=1,b=2;
+
+    // -- function definition
+    function writeSum(){
+        console.log(a+b);
+    }
+    // -- function definition
+    function computeSum(){
+        return a+b;
+    }
+
+    // --- call function
+    writeSum();
+    a=3;
+    b=4;
+    // --- call function
+    writeSum();
+
+    let c;
+    // --- call function
+    c = computeSum();
+    console.log(`c is ${c}`);
+    // -- function definition
+    function writeSumWithArguments(arg1,arg2){
+        console.log(arg1+arg2);
+    }
+
+    // --- call function
+    writeSumWithArguments(3,6); // write to console 9
+    // --- call function
+    writeSumWithArguments(a,b); //  write to console 7
+    // --- call function
+    writeSumWithArguments(a,b+1);//  write to console 8
+
+    // -- function definition
+    function computeSumWithArguments(arg1,arg2){
+        return arg1+arg2;
+    }
+
+    // --- call function
+    c = computeSumWithArguments(3,6); 
+    console.log(`c is ${c}`);
+
+    </script>
+</body>
+</html>

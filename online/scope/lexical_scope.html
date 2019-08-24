@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+    var a =1; // global scope
+
+    // -- call function
+    first();
+
+    // -- function definition
+    function first(){
+        var b=2; // -- scope first
+        second();
+
+        function second(){
+            var c=3; // scope decond
+            console.log(a+b+c);
+        }
+    }
+
+    console.log(a);
+    //console.log(c);
+
+    function sum(num1 , num2){
+        console.log(num1+num2);
+    }
+
+    sum(3,6); // --- 9
+    sum(a,a); // -- 2
+    //sum(a,b);
+    sum(a,num1);
+    </script>    
+</body>
+</html>

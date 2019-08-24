@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+    // function definition
+    function f() {
+        var a = 1;
+        console.log(a);
+    }
+
+    // --- call function
+    f(); 
+    console.log(a); // hoisting
+
+
+    var a = 1; //global scope
+    // --- function definition
+    function f1() {
+         a++;
+    }
+    //--- call function
+    f1();
+    alert(a); // --- show 2
+    alert(window.a); // --- show 2
+
+    // --- function definition
+    function f2() {
+        a1 = 10; // --- will be on global scope
+        a1++;
+    }
+
+    // --- call function
+    f2();
+    alert(a1);// --- show 11
+    alert(window.a1);// --- show 11
+
+
+    </script>
+</body>
+</html>
