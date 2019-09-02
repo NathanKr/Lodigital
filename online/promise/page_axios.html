@@ -1,0 +1,30 @@
+<body>
+  <button type="button" onclick="loadDoc()">Request data with axios</button>
+  <p id="demo"></p>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script>
+    function loadDoc() {
+      axios
+        .get("https://httpbin.org/get")
+        .then(function(response) {
+          // handle success
+          document.getElementById("demo").innerHTML = 
+          JSON.stringify(response);
+        })
+        .catch(function(error) {
+          // handle error
+          console.log(error);
+        });
+    }
+    // function loadDoc() {
+    //   var xhttp = new XMLHttpRequest();
+    //   xhttp.onreadystatechange = function() {
+    //     if (this.readyState === 4 && this.status === 200) {
+    //       document.getElementById("demo").innerHTML = this.responseText;
+    //     }
+    //   };
+    //   xhttp.open("GET", "https://httpbin.org/get");
+    //   xhttp.send();
+    // }
+  </script>
+</body>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <script>
+      const error = false;
+      const promise1 = new Promise((resolve, reject) => {
+        if (error) {
+          reject("Asynchronous operation failed");
+        } else {
+          resolve("Asynchronous operation is success");
+        }
+      });
+
+      const resolveHandler = val => {
+        setTimeout(() => console.log(`got this from resolve : ${val}`), 3000);
+      };
+
+      const rejectHandler = val => {
+        setTimeout(() => console.log(`got this from reject : ${val}`), 4000);
+      };
+
+      console.log("before promise is invoked");
+      promise1.then(resolveHandler).catch(rejectHandler);
+      console.log("after promise is invoked");
+    </script>
+  </body>
+</html>
