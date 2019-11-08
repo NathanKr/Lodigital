@@ -4,6 +4,12 @@ const app = express(),
   PORT = 8080;
 app.use(express.json());
 
+
+app.patch("/books/:id", (req, res) => {
+  mongodbBooks.handleUpdate(req, res);
+});
+
+
 app.delete("/books/:id", (req, res) => {
     mongodbBooks.handleDelete(req, res);
   });
