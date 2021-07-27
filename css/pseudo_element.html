@@ -12,12 +12,27 @@
       }
       h2::after {
         content: "♥";
-        color:green;
+        color: green;
       }
 
+      div::before {
+        width: 200px;
+        height: 200px;
+        content: "";
+        background: blue;
+        position: absolute;
+        z-index: -1;
+      }
+
+      div {
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
     </style>
   </head>
   <body>
     <h2>Hello</h2>
-</body>
+    <div></div>
+  </body>
 </html>
